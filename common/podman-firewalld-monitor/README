@@ -1,0 +1,10 @@
+
+# podman-firewalld-monitor
+## A tool to monitor firewalld reloads and reload podman networks as well.
+This bugged me to do manually. Now I can manage my cockpit firewall easier.
+
+```
+sudo dnf install python3-dbus python3-gobject
+```
+
+Copy the scripts to the directories and start the service.

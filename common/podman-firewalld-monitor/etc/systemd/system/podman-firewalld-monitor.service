@@ -1,0 +1,13 @@
+[Unit]
+Description=Monitor firewalld reloads and reload Podman networks
+After=firewalld.service
+Wants=firewalld.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/podman-firewalld-monitor.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
